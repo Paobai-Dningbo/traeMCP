@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>性别分布饼图</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="pieChart" style="width:600px;height:500px;"></div>
+    <script>
+        var data = [{
+            values: [5, 4],
+            labels: ['男', '女'],
+            type: 'pie'
+        }];
+        var layout = {
+            title: '性别分布'
+        };
+        Plotly.newPlot('pieChart', data, layout);
+    </script>
+</body>
+</html>
